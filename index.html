@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded shadow-md text-center space-y-4">
+        <h1 class="text-2xl font-bold">Score Keeper</h1>
+        <h2 id="score" class="text-4xl font-semibold">0 to 0</h2>
+        <p class="text-lg">Playing to:</p>
+        <select id="max" class="border rounded px-2 py-1">
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="7">7</option>
+        </select>
+
+        <div class="space-y-2">
+            <button id="p1" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700">+1 Player One</button>
+            <button id="p2" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">+1 Player Two</button>
+            <button id="resetButton" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700">Reset</button>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
